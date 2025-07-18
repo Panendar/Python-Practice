@@ -1,89 +1,47 @@
-# Number Guessing Game with GUI
+# Number Guessing Game
 
-A modern, user-friendly number guessing game implemented with Python and Tkinter. This enhanced version features a graphical interface, multiple difficulty levels, and a persistent high score system.
+A simple command-line number guessing game implemented in Python where players try to guess a randomly generated number between 1 and 50.
 
 ## Description
 
-This is an engaging and interactive game where:
-- Players can choose from three difficulty levels
-- The game provides real-time feedback with visual cues
-- High scores are tracked and saved between sessions
-- A clean, modern interface makes playing intuitive and fun
-- Players can use either mouse or keyboard to play
+This is a fun and interactive game where:
+- The computer generates a random number between 1 and 50
+- Players have 5 attempts to guess the correct number
+- After each guess, the game provides hints whether the guess is too high or too low
+- Players win by guessing the correct number within the allowed attempts
+
+## How to Play
+
+1. Run the Python script `numberguessing.py`
+2. Enter a number between 1 and 50 when prompted
+3. The game will tell you if your guess is too high or too low
+4. You have 5 chances to guess the correct number
+5. Keep guessing until you find the correct number or run out of attempts
 
 ## Features
 
-🎮 **Modern GUI Interface**
-- Clean, intuitive graphical user interface
-- Real-time visual feedback with emoji indicators
-- Easy-to-use input field and buttons
-- Responsive design that works on any screen size
-
-🎯 **Multiple Difficulty Levels**
-- Easy Mode: Numbers 1-50, 8 guesses
-- Medium Mode: Numbers 1-100, 6 guesses
-- Hard Mode: Numbers 1-200, 5 guesses
-
-🏆 **Advanced Scoring System**
-- Persistent high scores for each difficulty level
-- Scores saved between gaming sessions
-- Time tracking for each game attempt
-- Score based on remaining guesses
-
-⚡ **Quality of Life Features**
-- Enter key support for quick guessing
-- Clear feedback messages with emoji indicators
-- Warning messages for invalid inputs
-- One-click game restart
-- Dynamic difficulty switching
+- Random number generation between 1-50
+- 5 attempts to guess the number
+- Helpful hints after each guess
+- Clear feedback messages
+- Simple and user-friendly interface
 
 ## Requirements
 
 - Python 3.x
-- Tkinter (included with Python)
-- JSON support (included with Python)
-
-## Installation
-
-No additional installation required! The game uses Python's built-in modules.
+- `random` module (built into Python)
 
 ## How to Run
 
-1. Open a terminal or command prompt
-2. Navigate to the game directory
-3. Run the command:
-   ```bash
-   python numberguessing.py
-   ```
+```bash
+python numberguessing.py
+```
 
-## How to Play
+## Game Rules
 
-1. **Starting the Game**
-   - Launch the game
-   - Select your preferred difficulty level from the dropdown
-   - Click "Start New Game" to begin
-
-2. **Making Guesses**
-   - Enter your guess in the input field
-   - Press Enter or click "Submit Guess" to submit
-   - Watch for feedback above the input field
-   - The game will tell you if your guess is too high or too low
-
-3. **Winning and Scoring**
-   - Guess the correct number within the allowed attempts to win
-   - Your score is based on how many guesses you have left
-   - Faster completion times and fewer guesses mean better scores
-   - High scores are automatically saved for each difficulty level
-
-4. **Starting Over**
-   - Click "Start New Game" at any time to begin a new game
-   - Change difficulty level between games if desired
-   - Your high scores are preserved between sessions
-
-## Tips for Playing
-
-- Start with Easy mode to get familiar with the game
-- Use the feedback to narrow down your guesses
-- Try to develop a strategy to minimize the number of guesses
-- Challenge yourself with harder difficulties once you're comfortable
-- Try to beat your best scores in each difficulty level
+1. The number to guess is between 1 and 50
+2. You have 5 attempts to guess the correct number
+3. After each incorrect guess, you'll be told if your guess was too high or too low
+4. The game ends when you either:
+   - Guess the correct number (You win!)
+   - Use all 5 attempts (Game over)
