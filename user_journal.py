@@ -12,7 +12,7 @@ quit = True
 
 def write_journal():
     written_text = input("Enter your journal entry: ")
-    with open("journal.txt", "w") as f:
+    with open("journal.txt", "a") as f:
         f.write(f"{written_text}""\t\t====>" +str(datetime.datetime.now()) + "\n")
         return written_text
 
@@ -24,13 +24,18 @@ def read_journal():
         else:
             print("\n=== Journal Entries ===")
             for entry in content:
-                # Split the entry into text and timestamp
-                parts = entry.strip().split("\t\t====>")
-                text = parts[0]
-                timestamp = parts[1]
-                print(f"Entry: {text}")
-                print(f"Date: {timestamp}")
-                print("-" * 30)
+                try:
+                    # Split the entry into text and timestamp
+                    parts = entry.strip().split("\t\t====>")
+                    text = parts[0]
+                    timestamp = parts[1]
+                    print(f"Entry: {text}")
+                    print(f"Date: {timestamp}")
+                    print("-" * 30)
+                except IndexError:
+                    print("Warning: Found an entry with incorrect format")
+                    print(f"Raw entry: {entry.strip()}")
+                    print("-" * 30)
             return content
 
 def search_journal():
