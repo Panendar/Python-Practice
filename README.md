@@ -1,6 +1,6 @@
 # Python Practice Projects
 
-This repository contains various Python projects developed during practice sessions. Each project demonstrates different aspects of Python programming, from basic input/output to file handling and data manipulation.
+Welcome to my Python Learning Journey! This repository showcases my progress in learning Python through hands-on projects. From basic command-line games to file handling applications, each project represents a step forward in mastering Python programming concepts and best practices.
 
 ## Project Directory
 
