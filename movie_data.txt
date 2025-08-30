@@ -1,0 +1,10 @@
+Title,Genre,Director,Budget,Duration,IMDB_Rating
+Inception,Action,Christopher Nolan,160000000,148,8.8
+Titanic,Romance,James Cameron,200000000,195,7.8
+The Dark Knight,Action,Christopher Nolan,185000000,152,9.0
+Interstellar,Adventure,Christopher Nolan,165000000,169,8.6
+The Notebook,Romance,Nick Cassavetes,29000000,123,7.9
+Avatar,Adventure,James Cameron,237000000,162,7.8
+Mad Max: Fury Road,Action,George Miller,150000000,120,8.1
+La La Land,Romance,Damien Chazelle,30000000,128,8.0
+Jumanji,Adventure,Jake Kasdan,90000000,119,7.0
