@@ -1,0 +1,58 @@
+{
+    "contacts": [
+        {
+            "name": "Ramesh",
+            "tags": [
+                "Student",
+                "BTech"
+            ]
+        },
+        {
+            "name": "Roshini",
+            "tags": [
+                "Software Engineer",
+                "Highly ambitious"
+            ]
+        },
+        {
+            "name": "Bharath",
+            "tags": [
+                "Friend",
+                "BTech"
+            ]
+        }
+    ],
+    "conversations": {
+        "Ramesh": [
+            {
+                "datetime": "2025-08-01 10:00:00",
+                "sender": "Ramesh",
+                "text": "Hi Roopesh, I want to know more on GenAI"
+            }
+        ],
+        "Roshini": [
+            {
+                "datetime": "2025-08-02 09:30:00",
+                "sender": "Roshini",
+                "text": "Roopesh, the UI seems buggy today."
+            },
+            {
+                "datetime": "2025-08-02 09:32:00",
+                "sender": "me",
+                "text": "Can you specify which areas you are facing issues?"
+            },
+            {
+                "datetime": "2025-08-02 09:40:00",
+                "sender": "Roshini",
+                "text": "Sure! Mainly the login and dashboard features."
+            }
+        ],
+        "Bharath": [
+            {
+                "datetime": "2025-08-03 11:00:00",
+                "sender": "Bharath",
+                "text": "Hey Roopesh, are you free this weekend to catch up?"
+            }
+        ]
+    }
+}

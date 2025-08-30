@@ -1,8 +1,11 @@
 Product Name,Price,Quantity,Date,Region
 Laptop,800,5,2025-08-01,North
-Phone,600,10,2025-08-09,South
-Tablet,300,7,2025-08-08,East
+Phone,600,10,2025-08-01,South
+Tablet,300,7,2025-08-01,East
 Headphones,150,15,2025-08-02,West
-Monitor,200,8,2025-08-10,North
-SD,850,3,2025-08-14,South
-Buds,800,1,2025-08-16,north
+Monitor,200,8,2025-08-02,North
+Laptop,850,3,2025-08-03,South
+Phone,620,12,2025-08-03,East
+Tablet,310,5,2025-08-04,West
+Headphones,140,20,2025-08-04,North
+Monitor,210,6,2025-08-05,South
