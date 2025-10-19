@@ -96,8 +96,33 @@ Welcome to my Python Learning Journey! This repository showcases my progress in 
     - Best practices for configuration management
 
 16. **Main Demo** (`main.py`)
+
     - Demonstrates importing and using custom modules
     - Showcases the AI utilities module in action
+
+17. **Pokemon Data Analysis** (`clean.py`)
+
+    - Comprehensive data cleaning and analysis using Pandas
+    - Features:
+      - Kaggle API integration for dataset download
+      - Data exploration and filtering operations
+      - Statistical analysis (mean, median, mode)
+      - GroupBy operations for type-based analysis
+      - Data cleaning techniques (handling NaN values, duplicates)
+      - Data standardization and type conversion
+      - Pokemon filtering by attributes (legendary, type, attack power)
+    - Works with `Pokemon.csv` dataset
+
+18. **Great Expectations Data Validation** (`gx.py`)
+    - Data quality validation using Great Expectations library
+    - Features:
+      - Setting up Great Expectations context
+      - Connecting to Pandas data sources
+      - Creating batch definitions for data validation
+      - Defining expectations for data quality rules
+      - Validating Pokemon attack values within specified ranges
+      - Automated data quality checks
+    - Demonstrates professional data validation practices
 
 ## Projects Details
 
@@ -153,10 +178,12 @@ python numberguessing.py
 - Python 3.x
 - Required packages:
   - `numpy` (for NumPy.py and mat-plot.py)
-  - `pandas` (for data analysis projects and mat-plot.py)
+  - `pandas` (for data analysis projects, mat-plot.py, clean.py, gx.py)
   - `matplotlib` (for mat-plot.py data visualization)
   - `requests` (for weatherAPI.py)
   - `python-dotenv` (for try.py environment variable management)
+  - `kaggle` (for clean.py - Kaggle API integration)
+  - `great_expectations` (for gx.py - data validation)
   - Other dependencies as specified in individual projects
 
 ## How to Run the Projects
@@ -164,13 +191,17 @@ python numberguessing.py
 1. Clone this repository
 2. Install required dependencies:
    ```bash
-   pip install numpy pandas matplotlib requests python-dotenv
+   pip install numpy pandas matplotlib requests python-dotenv kaggle great_expectations
    ```
 3. For projects using environment variables (like `try.py`):
    - Create a `.env` file in the project root
    - Add your API keys and configuration variables
-4. Navigate to the project directory
-5. Run any project using Python:
+4. For Kaggle API integration (used in `clean.py`):
+   - Set up your Kaggle API credentials
+   - Download your `kaggle.json` from Kaggle account settings
+   - Place it in the appropriate location (`~/.kaggle/` on Linux/Mac or `C:\Users\<Username>\.kaggle\` on Windows)
+5. Navigate to the project directory
+6. Run any project using Python:
    ```bash
    python <filename>.py
    ```
@@ -184,7 +215,9 @@ python numberguessing.py
 ├── auto_messenger.py      # Automated messaging system
 ├── banking_system.py      # Banking operations simulator
 ├── calculator.py          # Command-line calculator
+├── clean.py               # Pokemon data cleaning and analysis
 ├── data.json              # JSON data file
+├── gx.py                  # Great Expectations data validation
 ├── journal.txt            # Journal entries storage
 ├── main.py                # Demo of ai_utils module usage
 ├── mat-plot.py            # Matplotlib visualization examples
@@ -193,6 +226,7 @@ python numberguessing.py
 ├── movies_set.py          # Movie database manager
 ├── numberguessing.py      # Number guessing game
 ├── NumPy.py               # NumPy practice exercises
+├── Pokemon.csv            # Pokemon dataset for analysis
 ├── sales_analyzer.py      # Sales data analysis tool
 ├── sales_data.csv         # Sales dataset
 ├── shoppingcart.py        # Shopping cart system
@@ -254,6 +288,7 @@ The repository includes several data files for practicing data analysis:
 
 - `data.json` - JSON format data for structured data handling
 - `movie_data.csv` / `movie_data.txt` - Movie datasets for analysis and visualization
+- `Pokemon.csv` - Pokemon dataset with attributes (HP, Attack, Defense, Type, Legendary status)
 - `sales_data.csv` - Sales records for business analytics
 - `journal.txt` - Persistent storage for journal entries
 - `transactions.txt` - Banking transaction records
@@ -265,14 +300,17 @@ This repository demonstrates proficiency in:
 - **Basic Python**: Variables, loops, conditionals, functions
 - **File I/O**: Reading and writing files (TXT, CSV, JSON)
 - **Data Structures**: Lists, dictionaries, sets
-- **External Libraries**: NumPy, Pandas, Matplotlib, Requests
-- **API Integration**: Working with external APIs (Weather)
+- **External Libraries**: NumPy, Pandas, Matplotlib, Requests, Great Expectations
+- **API Integration**: Working with external APIs (Weather, Kaggle)
 - **Data Visualization**: Charts, plots, and graphs with Matplotlib
+- **Data Cleaning**: Handling missing values, duplicates, and inconsistent data
+- **Data Validation**: Using Great Expectations for data quality checks
+- **Data Analysis**: Statistical analysis, aggregations, and insights generation
 - **Modular Programming**: Creating and importing custom modules
 - **Environment Management**: Using .env files for configuration
 - **Object-Oriented Programming**: Classes and objects
 - **Error Handling**: Try-except blocks and validation
-- **Data Analysis**: Statistical analysis and insights generation
+- **Professional Data Practices**: Data pipelines, batch processing, and quality assurance
 
 ## Repository Information
 
